@@ -2,7 +2,7 @@
 
 I wrote this simple static website to host my resume and about me page. It uses the Express framework for NodeJS as the backend and vanilla HTML/CSS and JavaScript to serve the pages. I wrote this project to gain experience creating a node server and connecting it to a frontend.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/7FR3hSNevhI)
 
 # Web Pages
 
