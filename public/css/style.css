@@ -1,0 +1,168 @@
+/*Color pallete https://coolors.co/e8c547-30323d-4d5061-5c80bc-cdd1c4 */
+:root {
+  --nav-dark: #30323d;
+  --font-light: #d8dbd2;
+  --main-dark: #4d5061;
+  --font-dark: #5c80bc;
+  --heading: #e8c547;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=PT+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--font-light);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: light;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 0;
+}
+
+h4 {
+  margin-top: 0.5em;
+}
+
+hr {
+  margin: 0;
+}
+
+#wrapper {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  justify-items: center;
+}
+
+header,
+footer {
+  color: var(--font-light);
+  background-color: var(--nav-dark);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*-------------------------------------------------------> HEADER */
+header {
+  box-shadow: 0px 1px 3px var(--main-dark);
+}
+
+header h1 {
+  margin: 1em;
+}
+
+nav {
+  position: absolute;
+  right: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+nav ul li {
+  padding: 0.5em;
+}
+
+nav ul li a {
+  display: block;
+  color: var(--font-light);
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+
+nav ul li a:hover {
+  transform: scale(1.25);
+  text-decoration: underline;
+}
+
+/*-------------------------------------------------------> MAIN */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 850px;
+  padding: 2em;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  background-color: var(--main-dark);
+  color: var(--font-light);
+  border-radius: 0.25em;
+  box-shadow: 2px 2px 2px var(--nav-dark);
+}
+
+.info h3 {
+  margin-top: 0;
+}
+
+.subtitle {
+  padding: 0.5em;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.info h2,
+.company,
+.position {
+  color: var(--heading);
+}
+
+hr {
+  border-top: 1px solid var(--heading);
+  border-bottom: 1px solid var(--heading);
+  border-radius: 1px;
+}
+
+.sectionWrapper {
+  padding: 0.5em;
+  transition-duration: 0.2s;
+}
+
+.sectionWrapper:hover {
+  transform: scale(1.01);
+  box-shadow: 1px 1px 5px var(--font-dark);
+  border-radius: 0.125em;
+}
+
+.company,
+.position {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.position h4 {
+  font-style: italic;
+  font-weight: 500;
+}
+
+.summary {
+  line-height: 1.25rem;
+}
+
+.summary li {
+  margin-bottom: 0.5rem;
+}
+
+/*-------------------------------------------------------> FOOTER */
